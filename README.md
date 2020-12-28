@@ -23,6 +23,6 @@ Queremos mostrar la lista de gastos ingresados en la tabla al final de la págin
 
 ## SOLUCIONES
 
-[Solución Oscar](https://github.com/omiras/Progats/blob/master/solucion-oscar.zip)
-[Solución Didac con Bonus](https://github.com/didac3141592/ajax-basic-exercises/tree/master/updating-table-data)
-[Solución Alba contactenando texto HTML para crear los elementos](https://github.com/aguzsol/Progats)
+[Solución Oscar](https://github.com/omiras/Progats/blob/master/solucion-oscar.zip)  
+[Solución Didac con Bonus](https://github.com/didac3141592/ajax-basic-exercises/tree/master/updating-table-data)  
+[Solución Alba contactenando texto HTML para crear los elementos](https://github.com/aguzsol/Progats)  
