@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.navigation-bar__title {
+  font-size: 2rem;
+  text-align: center;
+  color: #f2b366;
+}
+
+.logo-image {
+  display: none;
+}
+
+.navigation-bar__item a {
+  text-decoration: none;
+  color: #f2b366;
+  font-weight: bold;
+}
+
+.navigation-bar__item {
+  background-color: #3f2f21;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+.navigation-bar__items {
+  list-style-type: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#introduction {
+  height: 60vh;
+  margin-top: 1rem;
+  background-image: url("img/mobileCat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 10%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.introduction--title {
+  color: #f2f2f2;
+  position: absolute;
+  margin: 0;
+  bottom: 1rem;
+  left: 0.5rem;
+  text-shadow: 2px 2px #252424c5;
+  font-size: 1.4rem;
+}
+
+.team {
+  text-align: center;
+}
+
+.team--title,
+.team--member__name {
+  color: #36210f;
+}
+
+.team--member {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  background-image: url("img/pawns.jpg");
+}
+
+.team--member__info {
+  padding: 2px 16px;
+}
+
+.team--member__name {
+  margin: 0.5rem 0 0 0;
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .navigation-bar__title {
+    display: none;
+  }
+
+  .logo-image {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .navigation-bar {
+    background-color: rgba(217, 188, 163, 0.1);
+  }
+
+  .navigation-bar__items {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 100px;
+  }
+
+  .navigation-bar__item {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .navigation-bar__item:hover {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: rgb(165, 52, 17);
+  }
+
+  .navigation-bar__item a {
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .navigation-bar__item--contact a {
+    color: rgb(165, 52, 17);
+  }
+
+  .navigation-bar__item--contact:hover {
+    background-color: #f2b366;
+  }
+
+  #introduction {
+    background-image: url("img/sleepingCat.jpg");
+    text-align: center;
+  }
+
+  .introduction--title {
+    position: static;
+    padding-top: 1rem;
+  }
+
+  .team--member {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+/*
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+footer {
+    text-align: center;
+    background-color: rgba(190,183,171,0.2);
+    font-family: Arial;
+}
+
+footer a {
+    text-decoration: none;
+    color: #7A4831;
+    font-weight: bold;
+}
+
+
+ */

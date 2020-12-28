@@ -1,0 +1,29 @@
+[
+    {
+       "nombre": "Felix",
+       "raza": "Persa",
+       "ingresado" : "2020-12-09T22:18:26.625Z"
+    },
+    {
+        "nombre": "Bigotes",
+        "raza": "Vulgaris",
+        "ingresado": "2020-12-19T22:18:26.625Z"
+    },
+    {
+        "nombre": "Whiskas",
+        "raza": "Vulgaris",
+        "ingresado": "2020-12-19T22:18:26.625Z",
+        "fecha-alta": "2020-12-30T22:18:26.625Z"
+    },
+    {
+        "nombre": "Michifú",
+        "raza": "Siamés",
+        "ingresado": "2020-12-19T22:18:26.625Z",
+        "fecha-alta": "2020-12-17T22:18:26.625Z"
+    },
+    {
+        "nombre": "Pielecitas",
+        "raza": "Egipcio",
+        "ingresado": "2020-12-19T22:18:26.625Z",
+    }
+]

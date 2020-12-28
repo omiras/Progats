@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+        <link rel="stylesheet" type="text/css" href="flex.css">
+
+        <title>PROGATS</title>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo-image__desktop" src="img/logo.webp" width="100px">
+            <h1 class="navigation-bar__title">PROGATS</h1>
+            <nav class="navigation-bar">
+                <img class="logo-image" src="img/logo.webp" width="100px">
+                <ul class="navigation-bar__items">
+                    <li class="navigation-bar__item"><a
+                            href="#equipo">Equipo</a></li>
+                    <li class="navigation-bar__item"><a
+                            href="#servicios">Servicios</a></li>
+                    <li
+                        class="navigation-bar__item navigation-bar__item--contact">
+                        <a href="contact/index.html"
+                            target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="introduction">
+                <h1 class="introduction--title">¡Un hogar para <em>cada</em>
+                    gatito!</h1>
+            </section>
+            <section class="team">
+                <h2 class="team--title">Equipo</h2>
+                <article class="team--members">
+                    <div class="team--member">
+                        <img src="img/patricia.png"></img>
+                        <div class="team--member__info">
+                            <h3 class="team--member__name">Patricia</h3>
+                            <p class="team--member__position">Fundadora</p>
+                        </div>
+                    </div>
+                    <div class="team--member">
+                        <img src="img/veronica.png"></img>
+                        <div class="team--member__info">
+                            <h3 class="team--member__name">Verónica</h3>
+                            <p class="team--member__position">Voluntaria</p>
+                        </div>
+
+                    </div>
+                    <div class="team--member">
+                        <img src="img/edurne.png"></img>
+                        <div class="team--member__info">
+                            <h3 class="team--member__name">Edurne</h3>
+                            <p class="team--member__position">Voluntaria</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <table style="margin-top:2rem">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                    <th>Fecha ingreso</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+        <button id="cats-update" style="margin-top: 2rem;">Actualizar lista de gatitos ingresados</button>
+        <footer>
+            <p>PROGAT es una asociación sín ánimo de lucro. Apóyanos con <a
+                    href="https://www.progatlagarriga.com/"> una donación</a>.
+                Muchas gracias!</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+
+</html>
