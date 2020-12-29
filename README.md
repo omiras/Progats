@@ -6,6 +6,7 @@ Queremos mostrar la lista de gastos ingresados en la tabla al final de la págin
 
 ## Objetivos a conseguir
 
+0. Renombra el fichero app.js que contiene la solución actual.
 1. Inicia el **live server**. Comprueba que sabes a qué rutas debes acceder, usando la barra del navegador, para recuperar los datos del fichero
 2. Crea una llamada XMLHTTPRequest que recupere los datos del fichero y simplemente los muestre por consola. ¡Fíjate que es un fichero en formato JSON!
 3. Ahora, tienes que recorrer los datos "perseados" y crear tantas filas de la tabla como gatos ingresados has recuperado. Fíjate que [debes crear](https://www.w3schools.com/jsref/met_document_createelement.asp#:~:text=The%20createElement()%20method%20creates,insert%20it%20to%20the%20document.) elementos **tr**; uno para cada gato ingresado. Y también debes crear elementos **td**; uno para cada información del gato que debas mostrar. De nomento, muestra la fecha de ingreso tal cual.
