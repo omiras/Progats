@@ -1,3 +1,11 @@
+// Ficheros JSON en este mismo servidor de visual studio
+const url = "datos-ingresos/gatos.json"
+const fecha_alta = "fecha-alta"
+
+// STRAPI
+// const url = "http://localhost:1337/gatos-ingressos/"
+// const fecha_alta = "fecha_alta"
+
 let buttonCatsUpdate = document.querySelector('#cats-update')
 buttonCatsUpdate.addEventListener('click', updateInfo)
 let checkBoxAllCats = document.querySelector('#all-cats')
@@ -12,7 +20,7 @@ xhttp.onreadystatechange = function () {
 };
 
 function updateInfo() {
-    xhttp.open("GET", "datos-ingresos/gatos.json", true);
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
 
@@ -20,20 +28,22 @@ function updateTable(data) {
     // Muy opcional, para asegurarse que realmente hemos recuperado un array de datos. Porque si no, el foreach nos fallaría
     let tbody = document.querySelector('tbody')
 
-    // TODO: Habría que buscar la manera de borrar los objetos con removeChild
-    tbody.innerHTML = ""
+    // Para borrar todas las filas de la table
+    while (tbody.firstChild) {
+        tbody.firstChild.remove()
+    }
 
     if (!data || !Array.isArray(data)) {
         console.error("Error retrieving data!")
     }
 
     data.forEach(gato => {
-        if (checkBoxAllCats.checked || !gato['fecha-alta']) {
+        if (checkBoxAllCats.checked || !gato[fecha_alta]) {
             createRow(gato)
         }
 
         // Si tiene fecha de alta, vamos a comprobar si esta es anterior a la fecha de ingreso para informar al equipo
-        if (gato['fecha-alta'] < gato.ingresado) {
+        if (gato[fecha_alta] < gato.ingresado) {
             console.error(`El registro cuyo gato es ${gato.nombre} tiene una fecha de alta anterior a la fecha de ingreso`)
         }
 
